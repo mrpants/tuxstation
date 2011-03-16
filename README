@@ -1,0 +1,22 @@
+Back in 2003 (or 2004, maybe?), I wanted to create a stripped-down Linux distribution based on Damn Small Linux that would be named "Tuxstation". The goal was to strip down DSL (even further than it already was), add in some emulators and ROMs (or maybe not - USB keys were an option at the time, if I recall), and have a bootable Linux-based emulation environment. I'd be able to plug in my Super Nintendo controller (with a parallel port adapter I was working on, as USB options weren't present at the time), play some games outside of my regular Linux environment, shut down when finished, and boot back into my system. I really just wanted to see if I could pull such a project off.
+
+I got close on the OS remastering and had an alpha version burned to a CD for testing, but never fully reached the end of the project, unfortunately.
+
+The whole shebang was going to need a frontend, though, and since I'm an EarthBound junkie, my intent was to build a GUI that looks like the menus found in the game EarthBound, with fonts, graphics, etc. Simple, minimalist, easy on the eyes. Nothing too fancy. No screenshots or eye candy.
+
+This was the resulting frontend project.
+
+I wanted to write this in Perl, but at the time, SDL Perl was either in its infancy and undocumented, or it didn't exist. I can't remember. So, it's written in C, as I wanted to take a stab at learning how to code in C anyway.
+
+If I recall correctly, the list scrolling wasn't 100% perfect, either, so it's probably a bit wonky.
+
+But, here it is anyway.
+
+Requirements:
+* SDL is definitely required.
+* A file named "menu.ogg" can go into the "snd" directory if you want to hear music play while selecting games.
+* Some lists of ROM files are needed within the ".tuxstation/data" directory, one per system. Format is just one ROM filename per line.
+* The config files within the ".tuxstation" directory needs some modifications to run on a different machine.
+* A few other bits are probably required, too, but I can't remember them off the top of my head.
+
+Enjoy.
